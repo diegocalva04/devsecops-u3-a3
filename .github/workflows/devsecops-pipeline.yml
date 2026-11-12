@@ -23,7 +23,7 @@ jobs:
           pip install bandit safety
       - name: Analisis SAST con Bandit
         run: |
-          bandit -r . -lll -f custom
+          bandit -r . -ll -f custom
       - name: Analisis SCA con Safety
         run: |
           safety check -r requirements.txt --full-report
