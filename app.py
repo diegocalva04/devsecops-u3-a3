@@ -11,3 +11,7 @@ def fetch_data(url):
 def run_user_code(user_code):
     # Vulnerabilidad SAST de severidad alta: ejecucion arbitraria.
     exec(user_code)
+
+
+def health_check():
+    return {"status": "ok"}
